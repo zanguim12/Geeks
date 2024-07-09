@@ -1,0 +1,90 @@
+mat-toolbar {
+  background: #fcfcfd; /* Couleur principale */
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  justify-content: space-between; /* Espacement automatique */
+}
+
+mat-toolbar button {
+  color: rgb(3, 3, 3); /* Couleur du texte des boutons */
+}
+
+mat-form-field {
+  margin-right: 16px; /* Marge à droite */
+  width: 300px; /* Largeur fixe */
+}
+
+.spacer {
+  flex: 1 1 auto; /* Pour occuper l'espace disponible */
+}
+
+.logo-link {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  text-decoration: none; /* Pas de soulignement */
+  color: inherit; /* Couleur par défaut */
+}
+
+.logo {
+  height: 40px; /* Hauteur du logo */
+  margin-right: 10px; /* Espacement entre le logo et le texte */
+}
+
+.search-field {
+  margin-left: 10px; /* Espacement à gauche */
+}
+
+.mat-button-base:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* Couleur de fond au survol */
+}
+
+.mat-menu-panel {
+  width: 180px; /* Largeur des sous-menus */
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background: #ececf0; /* Primary color */
+  display: flex;
+  align-items: center;
+}
+
+mat-toolbar button {
+  color: rgb(3, 3, 3);
+}
+
+mat-form-field {
+  margin-right: 16px;
+  width: 300px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center; /* Pour centrer l'image verticalement */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  color: inherit; /* Utiliser la couleur par défaut du texte */
+}
+
+.logo {
+  height: 40px; /* Ajuster la hauteur selon votre besoin */
+  margin-right: 10px; /* Espacement entre le logo et le texte */
+}
+
+.search-field {
+  margin-left: 10px; /* Espacement entre le logo et la barre de recherche */
+}
+
+.theme-toggle-button {
+  margin-left: 10px; /* Espacement entre la barre de recherche et le bouton de changement de thème */
+}
+
+.mat-button-base:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* Couleur de fond au survol */
+}
+
+/* Styles pour les sous-menus */
+.mat-menu-panel {
+  width: 180px; /* Largeur des sous-menus */
+}

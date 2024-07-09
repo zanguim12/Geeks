@@ -1,0 +1,133 @@
+<p>BROWER CATEGORIES</p>
+<b><h2>The world's top courses</h2></b>
+<p-tabView>
+  <p-tabPanel header="All categories">
+    <p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div>
+                <div class="mb-3">
+                  <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+                    <ng-template pTemplate="header">
+                      <img [src]="product.image" alt="{{ product.name }}" class="w-full border-round" />
+                    </ng-template>
+                  </p-card>
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.name }}
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                <div class="mt-0 font-semibold text-xl">
+                    {{ '$' + product.price }}
+                </div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+  </p-tabPanel>
+  <p-tabPanel header="Design">
+    <p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3">
+                <div class="mb-3">
+                  <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+                    <ng-template pTemplate="header">
+                      <img [src]="product.image" alt="{{ product.name }}" class="w-full border-round" />
+                    </ng-template>
+                  </p-card>
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.name }}
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                <div class="mt-0 font-semibold text-xl">
+                    {{ '$' + product.price }}
+                </div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+  </p-tabPanel>
+  <p-tabPanel header="Javascript">
+    <p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3">
+                <div class="mb-3">
+                  <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+                    <ng-template pTemplate="header">
+                      <img [src]="product.image" alt="{{ product.name }}" class="w-full border-round" />
+                    </ng-template>
+                  </p-card>
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.name }}
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                <div class="mt-0 font-semibold text-xl">
+                    {{ '$' + product.price }}
+                </div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+  </p-tabPanel>
+  <p-tabPanel header="Web Devellopment">
+    <p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3">
+                <div class="mb-3">
+                  <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+                    <ng-template pTemplate="header">
+                      <img [src]="product.image" alt="{{ product.name }}" class="w-full border-round" />
+                    </ng-template>
+                  </p-card>
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.name }}
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                <div class="mt-0 font-semibold text-xl">
+                    {{ '$' + product.price }}
+                </div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+  </p-tabPanel>
+</p-tabView>
+
