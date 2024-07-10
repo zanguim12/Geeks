@@ -12,6 +12,7 @@ import { CardModule } from 'primeng/card';
 import { AvatarModule, } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { DividerModule } from 'primeng/divider';
+import { SplitterModule } from 'primeng/splitter';
 
 
 
@@ -31,7 +32,8 @@ import { DividerModule } from 'primeng/divider';
     CardModule,
     AvatarModule,
     AvatarGroupModule,
-    DividerModule
+    DividerModule,
+    SplitterModule
   ],
   templateUrl: './newsletter.component.html',
   styleUrls: ['./newsletter.component.scss']  // Utilisation de styleUrls pour inclure le fichier de style

@@ -35,24 +35,70 @@
         </ng-template>
 </p-carousel>
 
-<p>
-    <p-avatarGroup styleClass="mb-3">
-        <p-avatar
-            image="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-1.jpg"
-            size="large"
-            shape="circle" />
-        <p-avatar
-            image="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-2.jpg"
-            size="large"
-            shape="circle" />
-        <p-avatar
-            image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
-            size="large"
-            shape="circle" />
-        <p-avatar
-            image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
-            size="large"
-            shape="circle" />
-  </p-avatarGroup>
-</p>
-<p-divider layout="vertical" height="10"/>
+
+<p-splitter
+    [panelSizes]="[25, 75]"
+    [style]="{ height: '300px' }"
+    styleClass="mb-5">
+    <ng-template pTemplate>
+        <div class="col flex align-items-center justify-content-center">
+          <p>
+            <p-avatarGroup styleClass="mb-3">
+                <p-avatar
+                    image="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-1.jpg"
+                    size="large"
+                    shape="circle" />
+                <p-avatar
+                    image="https://geeksui.codescandy.com/geeks/assets/images/avatar/avatar-2.jpg"
+                    size="large"
+                    shape="circle" />
+                <p-avatar
+                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
+                    size="large"
+                    shape="circle" />
+                <p-avatar
+                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
+                    size="large"
+                    shape="circle" />
+          </p-avatarGroup>
+          <span>
+            Earn money
+            Earn money every time a student purchases your course. Get paid monthly through Paypal or Payoneer .
+          </span>
+        </p>
+        </div>
+    </ng-template>
+    <ng-template pTemplate>
+        <div class="col flex align-items-center justify-content-center">
+          <p-splitter
+          [style]="{ height: '300px' }"
+          styleClass="mb-5"
+          layout="vertical">
+              <ng-template pTemplate>
+                  <div class="col flex align-items-center justify-content-center">
+                    Top instructors from around the world teach millions of students on Geeks. We provide the tools and skills to teach what you love
+                  </div>
+              </ng-template>
+              <ng-template pTemplate>
+                  <div class="col flex align-items-center justify-content-center">
+                    <p-splitter [style]="{ height: '300px' }" styleClass="mb-5">
+                      <ng-template pTemplate>
+                          <div class="col flex align-items-center justify-content-center ">
+                            Inspire students<br/>                            <br/>
+                            Help people learn new skills, advance their careers,<br/>
+                            and explore their hobbies by sharing your knowledge.
+                          </div>
+                      </ng-template>
+                      <ng-template pTemplate>
+                          <div class="col flex align-items-center justify-content-center">
+                            Join our community<br/><br/>
+Take advantage of our active community of instructors <br/> to help you through your course creation process.
+                          </div>
+                      </ng-template>
+                  </p-splitter>
+                  </div>
+              </ng-template>
+      </p-splitter>
+        </div>
+    </ng-template>
+</p-splitter>
