@@ -1,9 +1,13 @@
-<span>
-  TÉMOIGNAGES
-Ne nous croyez pas seulement sur parole.
-Plus de 12 millions de personnes apprennent déjà sur Geeks
-</span>
-<p-carousel [value]="Products" [numVisible]="2" [numScroll]="3">
+<div class="col flex align-items-center justify-content-center">
+  <span>
+    <b>
+      <h6> TESTIMONIALS</h6> </b>
+      <h3>Don’t just take our word for it.</h3>
+      <i>12+ million people are already learning on Geeks</i>
+    </span>
+</div>
+
+<p-carousel [value]="Products" [numVisible]="3" [numScroll]="3">
   <ng-template let-product pTemplate="item">
     <div class="border-1 surface-border border-round m-2 p-3">
       <div class="mb-3">
