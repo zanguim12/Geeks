@@ -9,6 +9,11 @@ import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import { MatCardModule } from '@angular/material/card';
 import { CardModule } from 'primeng/card';
+import { AvatarModule, } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { DividerModule } from 'primeng/divider';
+
+
 
 @Component({
   selector: 'app-newsletter',
@@ -23,7 +28,10 @@ import { CardModule } from 'primeng/card';
     MenubarModule,
     InputTextModule,
     MatCardModule,
-    CardModule
+    CardModule,
+    AvatarModule,
+    AvatarGroupModule,
+    DividerModule
   ],
   templateUrl: './newsletter.component.html',
   styleUrls: ['./newsletter.component.scss']  // Utilisation de styleUrls pour inclure le fichier de style

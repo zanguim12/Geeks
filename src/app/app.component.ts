@@ -7,6 +7,8 @@ import { CoursesComponent } from './features/courses/courses.component';
 import { TestimonialsComponent } from './features/testimonials/testimonials.component';
 import { NewsletterComponent } from './features/newsletter/newsletter.component';
 import { CommonModule } from '@angular/common';
+import { DividerModule } from 'primeng/divider';
+
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ import { CommonModule } from '@angular/common';
     HeroComponent,
     CoursesComponent,
     TestimonialsComponent,
-    NewsletterComponent],
+    NewsletterComponent,
+    DividerModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

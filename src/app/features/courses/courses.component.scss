@@ -1,0 +1,7 @@
+.centered-text-container {
+  display: flex;
+  justify-content: center; // Centre le texte horizontalement
+  align-items: center; // Centre le texte verticalement
+  height: 100%; // Assurez-vous que le conteneur a une hauteur définie
+  width: 100%; // Optionnel si vous voulez que le conteneur prenne toute la largeur
+}

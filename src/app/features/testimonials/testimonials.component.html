@@ -1,1 +1,32 @@
-<p>testimonials works!</p>
+<span>
+  TÉMOIGNAGES
+Ne nous croyez pas seulement sur parole.
+Plus de 12 millions de personnes apprennent déjà sur Geeks
+</span>
+<p-carousel [value]="Products" [numVisible]="2" [numScroll]="3">
+  <ng-template let-product pTemplate="item">
+    <div class="border-1 surface-border border-round m-2 p-3">
+      <div class="mb-3">
+        <div class="relative mx-auto">
+          <!--<img [src]="product.image" alt="{{ product.name }}" class="w-full border-round" style="max-width: 10; height: 10;"/>-->
+          <div class="product-item">
+            <span class="product-name">{{ product.name }}</span>
+            <span class="product-description">{{ product.description }}</span>
+            <span class="product-price">{{ product.price | currency }}</span>
+          </div>
+          <p-panel [toggleable]="true">
+            <ng-template pTemplate="header">
+              <div class="flex align-items-center gap-2">
+                <p-avatar
+                  image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"/>
+              </div>
+              <span>
+                LYONS LION
+              </span>
+            </ng-template>
+          </p-panel>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
